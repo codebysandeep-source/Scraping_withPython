@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests    # The requests module allows you to send HTTP requests using Python. The HTTP request returns a Response Object with all the response data (content, encoding, ...
                    # HTTP requests are messages sent by the client to initiate an action on the server. Their start-line contain three elements: An HTTP method, a verb (like GET , PUT or POST ) or a noun (like HEAD or OPTIONS ), that describes the action to be performed.
+#to install ->  pip install requests
 
 content = requests.get("https://www.lipsum.com/").text
 soup = BeautifulSoup(content, "lxml")

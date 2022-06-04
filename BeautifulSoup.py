@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup  #Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+# to install -> pip install BeautifulSoup4 
 
 with open("index.html", "r") as san:  # where san is a variable and you can give any other variable
   content = san.read() # to read the file using read() method

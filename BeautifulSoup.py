@@ -43,10 +43,3 @@ with open("index.html", "r") as san:  # where san is a variable and you can give
 
 
 
-# ======================================================================================= #
-
-import requests    # The requests module allows you to send HTTP requests using Python. The HTTP request returns a Response Object with all the response data (content, encoding, ...
-                   # HTTP requests are messages sent by the client to initiate an action on the server. Their start-line contain three elements: An HTTP method, a verb (like GET , PUT or POST ) or a noun (like HEAD or OPTIONS ), that describes the action to be performed.
-
-get_text = requests.get("https://www.lipsum.com/").text
-print(get_text)

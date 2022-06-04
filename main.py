@@ -7,7 +7,7 @@ with open("index.html", "r") as san:  # where san is a variable and you can give
   # print(content)
 
   # With BeautifulSoup
-  soup = BeautifulSoup(content, "lxml") # combination of HTML and XML
+  soup = BeautifulSoup(content, "lxml") # lxml is combination of HTML and XML
   # print(soup.prettify())
 
   h2_tag = soup.find('h2') # to find a HTML tag using find() method.

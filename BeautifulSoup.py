@@ -7,7 +7,7 @@ with open("index.html", "r") as san:  # where san is a variable and you can give
   # print(content)
 
   # With BeautifulSoup
-  soup = BeautifulSoup(content, "lxml") # combination of HTML and XML
+  soup = BeautifulSoup(content, "lxml") # lxml is combination of HTML and XML
   # print(soup.prettify())
 
   h2_tag = soup.find('h2') # to find a HTML tag using find() method.
@@ -34,12 +34,14 @@ with open("index.html", "r") as san:  # where san is a variable and you can give
 
 
   div = soup.find_all(id="mydiv")
-  #for j in div:                    
+  for j in div:                    
     #print(j.h3)                   # output ->  <h3>Hi, I am Header3 </h3>
     #print(j.h3.text)              # output ->  Hi, I am Header3
     #print(j.h3.text.split())      # output ->  ['Hi,', 'I', 'am', 'Header3']
     #print(j.h3.text.split()[3])   # output ->  Header3
-    #print(j.h3.text.split()[1:3]) # output ->  ['I', 'am']
+    print(j.h3.text.split()[1:3]) # output ->  ['I', 'am']
+
+
 
 
 
